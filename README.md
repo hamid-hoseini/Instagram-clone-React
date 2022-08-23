@@ -15,9 +15,9 @@
 
 ## What I have learned in this project are:
 
-  1. Define `images.domains` config in `next.config.js` if any pages that leverages the next/image component and we passed a src value that uses a hostname in the URL. [Read more...](https://nextjs.org/docs/messages/next-image-unconfigured-host)
-  2. Adding custom styles to Tailwind and using CSS and `@layer` [Read more...](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer)
-  3. Using **Faker-js** to generate massive amounts of fake (but realistic) data for testing and development. [Read more...](https://github.com/faker-js/faker)
+  1. Define `images.domains` config in `next.config.js` if any pages that leverages the next/image component and we passed a src value that uses a hostname in the URL. <sub>[Read more...](https://nextjs.org/docs/messages/next-image-unconfigured-host)</sub>
+  2. Adding custom styles to Tailwind and using CSS and `@layer` <sub>[Read more...](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer)</sub>
+  3. Using **Faker-js** to generate massive amounts of fake (but realistic) data for testing and development. <sub>[Read more...](https://github.com/faker-js/faker)</sub>
 
 ## Dependencies
   - Tailwind React Native Classnames [link](https://github.com/tailwindlabs/heroicons)
