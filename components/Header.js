@@ -48,7 +48,7 @@ export default function Header() {
           <PlusCircleIcon className='navBtn' />
           <UserGroupIcon className='navBtn' />
           <HeartIcon className='navBtn' />
-          <img src="https://lh3.googleusercontent.com/ogw/AOh-ky0by42wLdEFCYPwPwRZ9JL7XxmORNvLElfaz_gXnQ=s128-c-mo"
+          <img src="https://avatars.githubusercontent.com/u/7660220?v=4"
             alt="Profile pic"
             className='h-10 rounded-full cursor-pointer' />
         </div>
