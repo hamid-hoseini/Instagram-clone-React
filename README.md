@@ -20,6 +20,7 @@
   3. Using **Faker-js** to generate massive amounts of fake (but realistic) data for testing and development. <sub>[Read more...](https://github.com/faker-js/faker)</sub>
   4. Build a custom authentication screen using **NextAuth** <sub>[Read more...](https://next-auth.js.org/getting-started/example)</sub>
   5. Using **SessionProvider**, we have to wrap entire application to allow us to keep our session state. <sub>[Read more...](https://next-auth.js.org/getting-started/upgrade-v4#sessionprovider)</sub>
+  6. **Recoil** A state management library for React. <sub>[Read more...](https://recoiljs.org/)</sub>
 
 ## Dependencies
   - Tailwind React Native Classnames [link](https://github.com/tailwindlabs/heroicons)
@@ -49,7 +50,51 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 export default MyApp
 ```
 
+> How to use Recoil 
+  1. In _app.tsx, we need to wrap entire code with **RecoilRoot**
+  ```tsx
+  ...
+  import { RecoilRoot } from 'recoil';
 
+  ...
+  <SessionProvider session={session} refetchInterval={5 * 60}>
+    <RecoilRoot>
+      <Component {...pageProps} />
+    </RecoilRoot>
+  </SessionProvider>
+  ...
+  ```
+
+  2. Need to create Atoms contain the source of truth for our application state. like: `/atoms/modalAtoms.js`
+
+  We give our atom a unique key and set the default value to any required values
+  ```tsx
+  import { atom } from "recoil";
+
+  export const modalState = atom({
+    key: "modalState",
+    default: false
+  });
+  ```
+
+  3. To read the contents of this atom, we can use the `useRecoilValue()` or `useRecoilState()` hook in our TodoList component:
+  ```tsx
+  ...
+  import { useRecoilState } from 'recoil';
+  import { modalState} from '../atoms/modalAtom';
+  
+  export default function Header() {
+
+    const [open, setOpen] = useRecoilState(modalState);
+    
+    return (
+      ...
+      <div onClick={() => setOpen(true)}>
+      ...
+    )
+  }
+  ```
+  
 #### DISCLAIMER: 
 
 This code is developed for learning purposes only. Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” of this code for education purposes.
