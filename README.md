@@ -29,9 +29,10 @@
   - Tailwind Scrollbar Hide [link](https://www.npmjs.com/package/tailwind-scrollbar-hide)
   - Next Auth [link](https://next-auth.js.org/getting-started/example)
   - Firebase [link](https://console.firebase.google.com/)
+  - @headlessui/react [link](https://headlessui.com/)
 
 
-> Use SessionProvider to wrap entire application and we have to wrap any part of our application using useSession in this provider.
+> Use `SessionProvider` to wrap entire application and we have to wrap any part of our application using `useSession` in this provider.
 ```tsx
 import '../styles/globals.css'
 import type { AppProps } from 'next/app';
@@ -51,7 +52,7 @@ export default MyApp
 ```
 
 > How to use Recoil 
-  1. In _app.tsx, we need to wrap entire code with **RecoilRoot**
+  1. In _app.tsx, we need to wrap entire code with `RecoilRoot`
   ```tsx
   ...
   import { RecoilRoot } from 'recoil';
