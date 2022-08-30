@@ -1,5 +1,3 @@
-### in progress...
-
 # Instagram clone with REACT
   A copy of the Instagram app to learn and improve coding skills with the React platform.
   (Next.js, Tailwind CSS, Firebase v9, NextAuth, Recoil)
@@ -32,6 +30,15 @@
   - @headlessui/react [link](https://headlessui.com/)
   - React Moment [link](https://www.npmjs.com/package/react-moment/)
   - Moment module 
+
+## Short Demo
+
+https://user-images.githubusercontent.com/7660220/187562398-d4867a59-74a4-4e29-84c9-cb8d3c3cc5f8.mp4
+
+<sub>Photos: https://pixabay.com/ </sub>
+
+
+## Note
 
 > Use `SessionProvider` to wrap entire application and we have to wrap any part of our application using `useSession` in this provider.
 ```tsx

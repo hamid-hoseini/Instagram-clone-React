@@ -70,7 +70,7 @@ function Post({ id, username, img, userImg, caption }) {
     <div className='bg-white my-7 border rounded-sm'>
       {/* Header */}
       <div className='flex items-center p-5'>
-        <img src={userImg} alt="" className='rounded-full h-12 w-12 border p-1 mr-3 '/>
+        <img src={userImg} alt="" className='rounded-full h-12 w-12 border p-1 mr-3' referrerPolicy="no-referrer"/>
         <p className='flex-1 font-bold'>{username}</p>
         <DotsHorizontalIcon className='h-5'/>
       </div>
