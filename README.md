@@ -30,7 +30,8 @@
   - Next Auth [link](https://next-auth.js.org/getting-started/example)
   - Firebase [link](https://console.firebase.google.com/)
   - @headlessui/react [link](https://headlessui.com/)
-
+  - React Moment [link](https://www.npmjs.com/package/react-moment/)
+  - Moment module 
 
 > Use `SessionProvider` to wrap entire application and we have to wrap any part of our application using `useSession` in this provider.
 ```tsx
